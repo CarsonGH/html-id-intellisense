@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f"/>
+      <stop offset="100%" style="stop-color:#0d1b2a"/>
+    </linearGradient>
+    <linearGradient id="bracketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e77f24"/>
+      <stop offset="100%" style="stop-color:#f4a644"/>
+    </linearGradient>
+    <linearGradient id="hashGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4fc3f7"/>
+      <stop offset="100%" style="stop-color:#29b6f6"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background rounded square -->
+  <rect x="4" y="4" width="120" height="120" rx="20" ry="20" fill="url(#bgGrad)"/>
+  
+  <!-- Left angle bracket < -->
+  <path d="M 16 64 L 40 38 L 40 48 L 26 64 L 40 80 L 40 90 Z" 
+        fill="url(#bracketGrad)" opacity="0.9"/>
+  
+  <!-- Right angle bracket > -->
+  <path d="M 112 64 L 88 38 L 88 48 L 102 64 L 88 80 L 88 90 Z" 
+        fill="url(#bracketGrad)" opacity="0.9"/>
+  
+  <!-- Hash symbol # representing ID -->
+  <g fill="url(#hashGrad)">
+    <!-- Vertical bars -->
+    <rect x="52" y="42" width="7" height="44" rx="2"/>
+    <rect x="69" y="42" width="7" height="44" rx="2"/>
+    <!-- Horizontal bars -->
+    <rect x="44" y="52" width="40" height="7" rx="2"/>
+    <rect x="44" y="69" width="40" height="7" rx="2"/>
+  </g>
+  
+  <!-- Subtle glow effect on hash -->
+  <g fill="#4fc3f7" opacity="0.3" filter="blur(2px)">
+    <rect x="52" y="42" width="7" height="44" rx="2"/>
+    <rect x="69" y="42" width="7" height="44" rx="2"/>
+    <rect x="44" y="52" width="40" height="7" rx="2"/>
+    <rect x="44" y="69" width="40" height="7" rx="2"/>
+  </g>
+</svg>

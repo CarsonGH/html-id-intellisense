@@ -1,0 +1,47 @@
+{
+	"name": "html-id-intellisense",
+	"displayName": "HTML ID IntelliSense",
+	"description": "Provides IntelliSense for HTML element IDs in script tags",
+	"version": "0.1.0",
+	"publisher": "carsho",
+	"license": "Unlicense",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/carsonGH/html-id-intellisense"
+	},
+	"homepage": "https://github.com/carsonGH/html-id-intellisense#readme",
+	"bugs": {
+		"url": "https://github.com/carsonGH/html-id-intellisense/issues"
+	},
+	"icon": "icon.png",
+	"engines": {
+		"vscode": "^1.95.0"
+	},
+	"categories": [
+		"Programming Languages",
+		"Linters"
+	],
+	"keywords": [
+		"html",
+		"javascript",
+		"intellisense",
+		"autocomplete",
+		"id"
+	],
+	"activationEvents": [
+		"onLanguage:html"
+	],
+	"main": "./out/extension.js",
+	"scripts": {
+		"generate": "npx ts-node scripts/generate-dom-completions.ts",
+		"compile": "esbuild src/extension.ts --bundle --outfile=out/extension.js --external:vscode --format=cjs --platform=node --minify",
+		"package": "pnpm run compile && vsce package --no-dependencies --allow-missing-repository"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.95.0",
+		"@types/node": "^22.0.0",
+		"@vscode/vsce": "^3.0.0",
+		"esbuild": "^0.24.0",
+		"typescript": "~5.4.0"
+	}
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Extension Test</title>
+</head>
+<body>
+    <h1 id="title">Hello World</h1>
+    <div id="container">
+        <input id="username" type="text" placeholder="Username">
+        <button id="submitBtn">Submit</button>
+        <canvas id="myCanvas"></canvas>
+    </div>
+    
+    <!-- Duplicate ID for testing warning -->
+    <p id="duplicate">First</p>
+    <p id="duplicate">Second</p>
+
+    <script>
+        // Test 1: Type an ID name - should autocomplete (try typing "tit" or "sub")
+        
+        // Test 2: Type a dot after ID - should show element properties/methods
+        // title.
+        // submitBtn.
+        // myCanvas.
+
+        // Test 3: Hover over an ID to see its type
+        console.log(title.textContent);
+        console.log(submitBtn.disabled);
+        console.log(myCanvas.getContext);
+
+        // Test 4: Ctrl/Cmd+click on an ID to go to its definition
+        username.value = "test";
+    </script>
+</body>
+</html>
