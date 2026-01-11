@@ -2,7 +2,7 @@
 	"name": "html-id-intellisense",
 	"displayName": "HTML ID IntelliSense",
 	"description": "Provides IntelliSense for HTML element IDs in script tags",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"publisher": "carsho",
 	"license": "Unlicense",
 	"repository": {
